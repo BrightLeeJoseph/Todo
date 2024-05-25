@@ -69,7 +69,7 @@
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item text-primary" href="#">{{i.user.email}}</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item text-primary" href="#">Edit Profile</a></li>
+                            <li><a class="dropdown-item text-primary" href="{% url 'edit' i.id %}">Edit Profile</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item text-primary" href="{% url 'del' i.user_id %}">Delete account</a></li>
                             <li><hr class="dropdown-divider"></li>

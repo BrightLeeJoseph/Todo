@@ -163,7 +163,7 @@ class Update_user(View):
     def post(self,request,**kwargs):
         id=kwargs.get("pk")
         data=User.objects.get(id=id)
-        form=Register(instance=data)
+        form=Register(request.POST,instance=data)
 
         if form.is_valid():
             form.save()
